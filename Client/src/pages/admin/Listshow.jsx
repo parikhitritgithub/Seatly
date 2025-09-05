@@ -14,7 +14,7 @@ const Listshow = () => {
 
   const fetchshows = async () => {
     try {
-      const { data } = await axios.get('/api/admin/getallshows', {
+      const { data } = await axios.get('/api/show/all', {
         headers: {
           Authorization: `Bearer ${await getToken()}`
         }
